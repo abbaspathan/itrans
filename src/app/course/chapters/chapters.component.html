@@ -1,0 +1,10 @@
+<div class="container course-box">
+    <h2 class="course-head">List Of Chapters</h2>
+    <ul class="course-list">
+        <li *ngFor="let c of course.chapters">
+            <a routerLink="/chapters">
+                {{c.chapterName}}
+            </a>
+        </li>
+    </ul>
+</div>

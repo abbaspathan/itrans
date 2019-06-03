@@ -22,8 +22,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     RegistrationModule,
     CourseModule,
+    BrowserAnimationsModule,
+
+
     RouterModule.forRoot(appRoute),
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,19 +5,34 @@ import { MatProgressBarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CourseRoute } from './course.route';
+import { QuizComponent } from './quiz/quiz.component';
+import { CourseService } from './course.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ChaptersComponent } from './chapters/chapters.component';
 
 @NgModule({
     declarations: [
-        CourseComponent
+        CourseComponent,
+        QuizComponent,
+        ChaptersComponent
     ],
     imports: [
         BrowserModule,
+        HttpClientModule,
+        FormsModule,
         RouterModule.forChild(CourseRoute),
         BrowserAnimationsModule,
         MatProgressBarModule,
+        
+    ],
+    providers:[
+        CourseService,
+        ChaptersComponent
     ],
     exports: [
-        CourseComponent
+        CourseComponent,
+        QuizComponent
     ]
 })
 export class CourseModule {

@@ -1,19 +1,19 @@
-export class Course{
+export class Courses{
     courseName:string;
     courseId:number;
-    chapters:Chapter[];
+    chapters:CourseChapter[];
 }
 
-export class Chapter{
+export class CourseChapter{
     chapterName:string;
     chapterId:number;
-    topics:Topic[];
+    modules:ChapterModule[];
 }
 
-export class Topic{
-    topicName:string;
-    topicId:number;
-    notes:string;
+export class ChapterModule{
+    moduleName:string;
+    moduleId:number;
+    moduleDetails:string;
 }
 
 export class Quiz{
