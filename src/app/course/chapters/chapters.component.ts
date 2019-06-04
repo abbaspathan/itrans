@@ -14,7 +14,7 @@ export class ChaptersComponent implements OnInit {
         private route: ActivatedRoute) { }
 
         course:Courses[];
-
+        
     ngOnInit(): void {
      this.course = JSON.parse(localStorage.getItem("course"));  
     }

@@ -17,6 +17,7 @@ export class ChapterModule{
 }
 
 export class Quiz{
+    quizId:number;
     question:string;
     option1:string;
     option2:string;

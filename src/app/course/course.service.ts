@@ -6,7 +6,7 @@ import { HttpClient,HttpHeaders  } from '@angular/common/http';
 @Injectable()
 export class CourseService{
 
-    baseUrlForQuiz ="/src/api/quiz.json";
+    baseUrlForQuiz ="/assets/jsondata/quiz.json";
    // baseUrl="/src/api/course0.json";
     
     constructor(private http: HttpClient) {}
