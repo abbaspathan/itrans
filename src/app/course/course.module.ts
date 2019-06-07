@@ -11,13 +11,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ChaptersComponent } from './chapters/chapters.component';
 import { AllQuizComponent } from './quiz/allquiz/allquiz.component';
+import { ModuleComponent } from './module/module.component';
 
 @NgModule({
     declarations: [
         CourseComponent,
         QuizComponent,
         ChaptersComponent,
-        AllQuizComponent
+        AllQuizComponent,
+        ModuleComponent
     ],
     imports: [
         BrowserModule,
@@ -36,7 +38,8 @@ import { AllQuizComponent } from './quiz/allquiz/allquiz.component';
         CourseComponent,
         QuizComponent,
         ChaptersComponent,
-        AllQuizComponent
+        AllQuizComponent,
+        ModuleComponent
     ]
 })
 export class CourseModule {

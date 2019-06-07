@@ -9,7 +9,6 @@ import { CourseService } from '../course.service';
 export class CourseComponent implements OnInit{
     progress = 30;
 
-
     courses: Courses[];
     constructor(private courseService: CourseService) {}
 

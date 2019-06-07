@@ -18,4 +18,9 @@ export class CourseService{
     findAllCourses(): Observable<Courses[]> {
         return this.http.get<Courses[]>("/assets/jsondata/course0.json");
     }
+
+    getCourseById():Observable<Courses>{
+        return this.http.get<Courses>("/assets/jsondata/corejava.json");
+    }
+
 }

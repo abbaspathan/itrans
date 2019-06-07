@@ -1,13 +1,13 @@
 export class Courses{
     courseName:string;
     courseId:number;
-    chapters:CourseChapter[];
+    courseChapter:CourseChapter[];
 }
 
 export class CourseChapter{
     chapterName:string;
     chapterId:number;
-    modules:ChapterModule[];
+    chapterModule:ChapterModule[];
 }
 
 export class ChapterModule{
